@@ -11,6 +11,6 @@ class Clas extends Model
     protected $guarded =[];
 
     public function users (){
-        return $this->hasMany(User::clases, 'clas_id');
+        return $this->hasMany(User::clas, 'clas_id');
     }
 }
