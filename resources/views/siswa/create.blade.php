@@ -12,16 +12,17 @@
     <p>Tambah Data Siswa</p>
     <a href="/">Kembali</a>
 
-    <form action="" method="post">
+    <form action="/siswa/store" method="post">
+        @csrf
 
         <br>
         <div>
             <label for="">Kelas</label>
             <br>
-            <select name="kelas">
-                <option value="XII PPLG 1">XII PPLG 1</option>
-                <option value="XII PPLG 2">XII PPLG 2</option>
-                <option value="XII PPLG 3">XII PPLG 3</option>
+            <select name="kelas_id">
+                <option value="1">XII PPLG 1</option>
+                <option value="2">XII PPLG 2</option>
+                <option value="3">XII PPLG 3</option>
             </select>
         </div>
 
@@ -34,7 +35,7 @@
 
         <br>
         <div>
-            <label for="">NISN</label>
+            <label for="">Nisn</label>
             <br>
             <input type="text" name="nisn">
         </div>
@@ -65,6 +66,11 @@
             <label for="">No Handphone</label>
             <br>
             <input type="tel" name="no_handphone">
+        </div>
+        <div>
+            <label for="">Photo</label>
+            <br>
+            <input type="file" name=photo>
         </div>
 
         <br>
